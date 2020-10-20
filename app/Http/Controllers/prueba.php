@@ -18,11 +18,11 @@ class prueba extends Controller
 {
   public function index(){
 
-    $empleado = Models\Empleado::all();
+    $empleados = Models\Empleado::all();
 
 
 
-      return view('welcome', compact('empleado'));
+      return view('welcome', compact('empleados'));
   }
 
   public function create(Request $request)

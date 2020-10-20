@@ -30,11 +30,11 @@
 
 
 
-      
+
     </tr>
   </thead>
   <tbody>
-  @foreach($empleado as $item)
+  @foreach($empleados as $item)
     <tr>
       <th scope="row">{{$item->id}}</th>
       <td>{{$item->nombre}}</td>
@@ -48,10 +48,10 @@
     </tr>
   </tbody>
 </table>
-  
 
-<!-- 
-<form action = "{{ route('empleado.guardar') }}" method ="POST">
+
+
+<form action = "{{ route('empleados.guardar') }}" method ="POST">
 @csrf
 	<table>
 	<tr>
@@ -79,7 +79,7 @@
 	<input type = 'submit' value = "Agregar empleado"/>
 	</td>
 	</tr>
-	</table> -->
+	</table>
 </form>
       <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

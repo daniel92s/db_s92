@@ -15,9 +15,9 @@ use App\Http\Controllers\prueba;
 |
 */
 
-Route::get('/empleado', [prueba::class, 'index']);
+Route::get('/empleados', [prueba::class, 'index']);
 
-Route::post('/guardar', [prueba::class, 'create'])->name('empleado.guardar');
+Route::post('/guardar', [prueba::class, 'create'])->name('empleados.guardar');
 
 
 
